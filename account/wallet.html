@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../asset/lib/bootstrap.min.css">
+    <script src="../asset/lib/bootstrap.bundle.min.js"></script>
+    <script src="../asset/lib/font-fontawesome-ae333ffef2.js"></script>
+    <script src="../asset/js/swiper-bundle.min.js"></script>
+    <script src="../asset/js/js.js"></script>
+
+    <link rel="stylesheet" href="../asset/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../asset/css/style.css" />
+    <title>Công nghệ Aidoo</title>
+    
+</head>
+<body>
+    <header>
+        <section>
+            <div class="row g-0">
+                <div class="col-12">
+                    <div class="card rounded-0">
+                        <div class="d-flex justify-content-between align-items-center p-3">
+                            <div class="d-flex align-items-center">
+                                <div class="me-2">
+                                    <img src="../asset/img/logo.jpg" width="50px" alt="" class="img-fluid">
+                                </div>
+                                <div>
+                                    <h5 class="text-danger text-center my-0">CÔNG NGHỆ TRỢ GIÚP</h5>
+                                </div>
+                            </div>
+                            <button class="btn d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebarNav" aria-controls="sidebarNav">
+                                <i class="fa-solid fa-bars"></i>
+                            </button>
+                            <div>
+                                <a class="text-dark fw-bold fs-5" href="">VietNam</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar for desktop -->
+            <nav class="col-md-3 col-lg-2 d-none d-md-flex sidebar flex-column" id="sidebarDesktop">
+                <a href="#" id="toggleSidebar" onclick="toggleSidebar()">
+                    <i class="fa-solid fa-bars"></i> <span id="sidebarToggleText"></span>
+                </a>
+                <a href="dashboard.html" class="active"><i class="fa-solid fa-gauge-high"></i> <span>Bảng điều khiển</span></a>
+                <a href="wallet.html"><i class="fa-solid fa-money-bill-transfer"></i> <span>Gửi tiền và rút tiền</span></a>
+                <a href="invest.html"><i class="fa-solid fa-cart-shopping"></i> <span>Mua gói Aitech</span></a>
+                <a href="referrals.html"><i class="fa-solid fa-users"></i> <span>Danh sách thành viên</span></a>
+                <a href="register-network.html"><i class="fa-solid fa-user-gear"></i> <span>Quản lý thành viên</span></a>
+                <a href="swap.html"><i class="fa-solid fa-right-left"></i> <span>Hoán đổi token Aidoo</span></a>
+                <a href="transactions.html"><i class="fa-solid fa-clock-rotate-left"></i> <span>Lịch sử giao dịch</span></a>
+                <a href="setting.html"><i class="fa-solid fa-gear"></i> <span>Cài đặt</span></a>
+                <a href="support.html"><i class="fa-solid fa-headset"></i> <span>Hỗ trợ trực tuyến</span></a>
+                <a href="documents.html"><i class="fa-solid fa-file-lines"></i> <span>Tài liệu chung</span></a>
+                <a href="aidootech.io.html"><i class="fa-solid fa-wallet"></i> <span>Ví Aidotech</span></a>
+                <a href="#"><i class="fa-solid fa-right-from-bracket"></i> <span>Đăng xuất</span></a>
+            </nav>
+
+            <!-- Offcanvas sidebar for mobile -->
+            <div class="offcanvas offcanvas-start w-75 " tabindex="-1" id="sidebarNav" aria-labelledby="sidebarNavLabel">
+                <div class="offcanvas-header bg-danger ">
+                    <h5 class="offcanvas-title text-white d-flex align-items-center" id="sidebarNavLabel">
+                        <i class="fa-solid fa-gauge-high text-danger bg-white rounded-circle p-2 me-2"></i>
+                        Bảng điều khiển
+                    </h5>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="d-flex flex-column">
+                        <a href="#" class="active"><i class="fa-solid fa-gauge-high text-white bg-danger rounded-circle p-2"></i> <span class="text-dark">Bảng điều khiển</span></a>
+                        <a href="#"><i class="fa-solid fa-money-bill-transfer text-white bg-danger rounded-circle p-2"></i> <span class="text-dark">Gửi tiền và rút tiền</span></a>
+                        <a href="#"><i class="fa-solid fa-cart-shopping text-white bg-danger rounded-circle p-2"></i> <span class="text-dark">Mua gói Aitech</span></a>
+                        <a href="#"><i class="fa-solid fa-users text-white bg-danger rounded-circle p-2"></i> <span class="text-dark">Danh sách thành viên</span></a>
+                        <a href="#"><i class="fa-solid fa-user-gear text-white bg-danger rounded-circle p-2"></i> <span class="text-dark">Quản lý thành viên</span></a>
+                        <a href="#"><i class="fa-solid fa-right-left text-white bg-danger rounded-circle p-2"></i> <span class="text-dark">Hoán đổi token Aidoo</span></a>
+                        <a href="#"><i class="fa-solid fa-clock-rotate-left text-white bg-danger rounded-circle p-2"></i> <span class="text-dark">Lịch sử giao dịch</span></a>
+                        <a href="#"><i class="fa-solid fa-gear text-white bg-danger rounded-circle p-2"></i> <span class="text-dark">Cài đặt</span></a>
+                        <a href="#"><i class="fa-solid fa-headset text-white bg-danger rounded-circle p-2"></i> <span class="text-dark">Hỗ trợ trực tuyến</span></a>
+                        <a href="#"><i class="fa-solid fa-file-lines text-white bg-danger rounded-circle p-2"></i> <span class="text-dark">Tài liệu chung</span></a>
+                        <a href="#"><i class="fa-solid fa-wallet text-white bg-danger rounded-circle p-2"></i> <span class="text-dark">Ví Aidotech</span></a>
+                        <a href="#"><i class="fa-solid fa-right-from-bracket text-white bg-danger rounded-circle p-2"></i> <span class="text-dark">Đăng xuất</span></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Content -->
+            <main class="col-12 col-md-9 col-lg-10 px-3 px-md-4">
+                    
+                <section>
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <h2 class="fw-bold">Quá trình gửi và rút tiền</h2>
+                            <hr class="mx-auto" style="width: 80px; border: 2px solid #8B0000; opacity: 1;">
+                            <p class="text-muted mt-2">
+                                <small>
+                                    (Lưu ý: bạn cần chuyển đúng địa chỉ ví, chuyển đủ USDT để mua coin Solidus Aitech)
+                                </small>
+                            </p>
+                        </div>
+                    </div>
+                    
+                
+                        <!-- Hướng dẫn gửi tiền USDT -->
+                        <div class="row g-4">
+                            <div class="col-12 col-lg-6">
+                                <div class="card shadow-sm p-4">
+                                    <p class="mb-4 p-3 attech-coin"><strong>Gửi tiền vào địa chỉ USDT.BEP20</strong>, yêu cầu này sẽ được xử lý trong khoảng <strong>5 ~ 30 phút</strong>. Vui lòng đợi, cảm ơn bạn!</p>
+                                    <div class="text-center mb-4">
+                                        <img src="../asset/img/logo.jpg" alt="Binance" class="img-fluid mb-3" style="width: 80px">
+                                        <p class="fw-bold mb-3">Gửi USDT.BEP20 đến địa chỉ:</p>
+                                        <div class="mb-3">
+                                            <img src="../asset/img/qrcode.png" width="150px" alt="QR Code" class="img-fluid">
+                                        </div>
+                                        <div class="d-flex align-items-center justify-content-center gap-2">
+                                            <input type="text" id="walletAddress" value="0x61ee927251b0a98e39907fba3a02d92baeedd08f" class="text-center small text-primary fw-bold" disabled style=" border: none; background: none;">
+                                            <button class="btn btn-sm btn-outline-dark" onclick="copyWalletAddress()">
+                                                <i class="fa-regular fa-copy"></i>
+                                            </button>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered table-hover">
+                                            <thead class="table-dark">
+                                                <tr>
+                                                    <th>Tạo nên</th>
+                                                    <th>Mã số Tx</th>
+                                                    <th>Số lượng</th>
+                                                    <th>Mạng</th>
+                                                    <th>Xác nhận</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>8/12/2024 10:41:01 SA</td>
+                                                    <td><a href="#" class="text-primary text-decoration-none">gmc6hTMkBuQuZD</a></td>
+                                                    <td>1000.00000000</td>
+                                                    <td>USDT.BEP20</td>
+                                                    <td><span class="badge bg-success">Thành công</span></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <!-- Hướng dẫn gửi tiền Token khác -->
+                            <div class="col-12 col-lg-6">
+                                <div class="card shadow-sm p-4">
+                                    <p class="mb-4 p-3 attech-coin"><strong>Gửi tiền vào địa chỉ Aidotech Token</strong>, yêu cầu này sẽ được xử lý trong khoảng <strong>5 ~ 30 phút</strong>. Vui lòng đợi, cảm ơn bạn!</p>
+                                    <div class="text-center">
+                                        <img src="../asset/img/logo.jpg" width="80px" alt="Aidotech Token" class="img-fluid mb-3">
+                                    </div>
+                                    <div>
+                                        <p class=" text-dark fs-6 mb-0">Sắp ra mắt</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <!-- Hướng dẫn gửi tiền AITECH COIN -->
+                        <div class="row mt-4 mb-4">
+                            <div class="col-12 col-lg-6">
+                                <div class="card shadow-sm p-3">
+                                    <p class="mb-4 p-3 attech-coin"><strong>Gửi tiền vào địa chỉ AITECH COIN</strong>, yêu cầu này sẽ được xử lý trong khoảng <strong>5 ~ 30 phút</strong>. Vui lòng đợi, cảm ơn bạn!</p>
+                                    <div class="text-center">
+                                        <img src="../asset/img/anh1.jpg" width="80px" alt="AITECH COIN" class="img-fluid mb-3">
+                                    </div>
+                                    <div>
+                                        <p class=" text-dark fs-6 mb-0">Sắp ra mắt</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </section>
+                <section>
+                    <div class="row">
+                        <div class="col-12 text-center mb-4">
+                            <h2 class="fw-bold text-uppercase fs-3">DANH SÁCH THỐNG KÊ TIỀN TỆ</h2>
+                            <hr class="mx-auto" style="width: 80px; border: 2px solid #8B0000; opacity: 1;">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card mb-5 border-0 shadow-sm">
+                                <div class="card-header bg-danger text-white text-start py-3">
+                                    <h6 class="mb-0">Tổng số dư: ≈ 1.435,8750 USD</h6>
+                                </div>
+                                <div class="table-responsive">
+                                    <table class="table table-hover align-middle mb-0">
+                                        <thead class="table-light">
+                                            <tr class="text-nowrap">
+                                                <th scope="col" class="py-3 d-none d-md-table-cell"></th>
+                                                <th scope="col" class="py-3 text-start">TIỀN MẶT</th>
+                                                <th scope="col" class="py-3">SỐ LƯỢNG</th>
+                                                <th scope="col" class="py-3">GIÁ</th>
+                                                <th scope="col" class="py-3"></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="text-danger fw-medium d-none d-md-table-cell">VÍ 1</td>
+                                                <td>
+                                                    <div class="d-flex align-items-center gap-2">
+                                                        <img src="../asset/img/anh2.jpg" width="40" height="40" class="rounded-circle" alt="icon">
+                                                        <div>
+                                                            <div class="fw-medium">Khai thác USDT BEP20</div>
+                                                            <span class="text-muted small">(Không mất phí)</span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="fw-medium">156.0000</td>
+                                                <td class="fw-medium">1,00 đô la</td>
+                                                <td>
+                                                    <div class="d-flex justify-content-end">
+                                                        <button type="button" class="btn btn-danger btn-sm d-flex align-items-center gap-2" data-bs-toggle="modal" data-bs-target="#withdrawModal" style="border-radius: 30px; background: linear-gradient(to right, #f5222d, #a8071a);">
+                                                            <span>Rút</span>
+                                                            <span class="d-flex align-items-center justify-content-center bg-white rounded-circle" style="width: 24px; height: 24px;">
+                                                                <i class="fa-solid fa-arrow-right text-danger"></i>
+                                                            </span>
+                                                        </button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-danger fw-medium d-none d-md-table-cell">VÍ 2</td>
+                                                <td>
+                                                    <div class="d-flex align-items-center gap-2">
+                                                        <img src="../asset/img/anh2.jpg" width="40" height="40" class="rounded-circle" alt="icon">
+                                                        <div>
+                                                            <div class="fw-medium">Hoa hồng USDT</div>
+                                                            <span class="text-muted small">(Phí 10%)</span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="fw-medium">1.435.0000</td>
+                                                <td class="fw-medium">1,00 đô la</td>
+                                                <td>
+                                                    <div class="d-flex justify-content-end">
+                                                        <button type="button" class="btn btn-danger btn-sm d-flex align-items-center gap-2" data-bs-toggle="modal" data-bs-target="#withdrawModal" style="border-radius: 30px; background: linear-gradient(to right, #f5222d, #a8071a);">
+                                                            <span>Rút</span>
+                                                            <span class="d-flex align-items-center justify-content-center bg-white rounded-circle" style="width: 24px; height: 24px;">
+                                                                <i class="fa-solid fa-arrow-right text-danger"></i>
+                                                            </span>
+                                                        </button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-danger fw-medium d-none d-md-table-cell">VÍ 3</td>
+                                                <td>
+                                                    <div class="d-flex align-items-center gap-2">
+                                                        <img src="../asset/img/anh1.jpg" width="40" height="40" class="rounded-circle" alt="icon">
+                                                        <div>
+                                                            <div class="fw-medium">Solidus AITECH</div>
+                                                            <span class="text-muted small">(hoán đổi)</span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="fw-medium">0,0000</td>
+                                                <td class="fw-medium">0,0854 đô la</td>
+                                                <td class="text-end text-muted">Sắp ra mắt</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-danger fw-medium d-none d-md-table-cell">VÍ 4</td>
+                                                <td>
+                                                    <div class="d-flex align-items-center gap-2">
+                                                        <img src="../asset/img/logo.jpg" width="40" height="40" class="rounded-circle" alt="icon">
+                                                        <div class="fw-medium">Mã thông báo Aldoo</div>
+                                                    </div>
+                                                </td>
+                                                <td class="fw-medium">8.3333</td>
+                                                <td class="fw-medium">0,1050 đô la</td>
+                                                <td>
+                                                    <div class="d-flex justify-content-end">
+                                                        <button type="button" class="btn btn-danger btn-sm d-flex align-items-center gap-2" data-bs-toggle="modal" data-bs-target="#withdrawModal" style="border-radius: 30px; background: linear-gradient(to right, #f5222d, #a8071a);">
+                                                            <span>Rút</span>
+                                                            <span class="d-flex align-items-center justify-content-center bg-white rounded-circle" style="width: 24px; height: 24px;">
+                                                                <i class="fa-solid fa-arrow-right text-danger"></i>
+                                                            </span>
+                                                        </button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-danger fw-medium d-none d-md-table-cell">VÍ 5</td>
+                                                <td>
+                                                    <div class="d-flex align-items-center gap-2">
+                                                        <img src="../asset/img/logo.jpg" width="40" height="40" class="rounded-circle" alt="icon">
+                                                        <div class="fw-medium">Mã thông báo Aldoo</div>
+                                                        <span class="text-muted small">(khóa)</span>
+                                                    </div>
+                                                </td>
+                                                <td class="fw-medium">1.191.6667</td>
+                                                <td class="fw-medium">0,1050 đô la</td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Modal HTML -->
+                    <div class="modal fade" id="withdrawModal" tabindex="-1" aria-labelledby="withdrawModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header bg-danger text-white">
+                                    <h5 class="modal-title" id="withdrawModalLabel">RÚT TIỀN (USDT)</h5>
+                                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="alert alert-info" role="alert">
+                                        LƯU Ý: Xử lý rút tiền từ 30 phút đến 24 giờ.
+                                    </div>
+                                    <form>
+                                        <div class="mb-3">
+                                            <div class="d-flex justify-content-between">
+                                                <label for="amount" class="form-label">Số lượng</label>
+                                                <p class="text-primary">12345678</p>
+                                            </div>
+                                            <input type="text" class="form-control" id="amount" placeholder="0" value="0">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="walletAddress" class="form-label">Địa chỉ ví</label>
+                                            <input type="text" class="form-control w-100 bg-light" id="walletAddress" value="0x49b1F8bB6232A580634184F3B5dB358D9dDE6463" readonly>
+                                        </div>
+                                        <div class="mb-3 d-flex justify-content-between">
+                                            <label class="form-label">Phí:</label>
+                                            <p id="fee" class="mb-1 fw-bold">0</p>
+                                        </div>
+                                        <div class="mb-3 d-flex justify-content-between">
+                                            <label class="form-label">Sẽ nhận được:</label>
+                                            <p id="amountReceived" class="mb-1 fw-bold">NaN</p>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="otp" class="form-label">Mã xác nhận</label>
+                                            <div class="d-flex w-100">
+                                                <input type="text" class="form-control w-100" id="otp" placeholder="Nhập mã OTP">
+                                                <button type="button" class="btn btn-primary ms-2" style="font-size: 10px;">NHẬN OTP</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <div class="w-100">
+                                        <button type="submit" class="btn btn-danger d-flex align-items-center justify-content-center w-100" style="border-radius: 50px; background: linear-gradient(to right, #f5222d, #a8071a); padding: 10px 20px;">
+                                            <span class="me-3">Rút</span>
+                                            <span class="d-flex align-items-center justify-content-center bg-white rounded-circle" style="width: 30px; height: 30px;">
+                                                <i class="fa-solid fa-arrow-right text-danger"></i>
+                                            </span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </section>
+            </main>
+            
+        </div>
+        
+    </div>
+</body>
+</html>

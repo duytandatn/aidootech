@@ -1,0 +1,179 @@
+/* Header */
+header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #ddd;
+}
+
+header .card {
+    border: none;
+    border-radius: 0;
+}
+a {
+    text-decoration: none;
+}
+/* Sidebar */
+.sidebar {
+    background-color: #ddd;
+    color: white;
+    height: auto;
+    padding-top: 1rem;
+}
+
+.sidebar a {
+    color: #000;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sidebar a.active, .sidebar a:hover {
+    background-color: red;
+    border-radius: 4px;
+    color: #fff;
+}
+
+/* Offcanvas Sidebar */
+.offcanvas-body a {
+    margin-bottom: 10px;
+}
+
+/* Main Content */
+main {
+    background-color: #f9fafc;
+    min-height: 100vh;
+    padding-top: 20px;
+}
+
+/* Top Bar */
+.top-bar p {
+    margin: 0;
+}
+
+.top-bar marquee a {
+    text-decoration: none;
+    color: #dc3545;
+}
+
+/* Dashboard Cards */
+.card {
+    box-shadow: 0 0px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.card h5 {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #dc3545;
+}
+/* wallet============================================================== */
+.attech-coin {
+    font-size: 14px;
+    background-color: #CCE5FF;
+}
+#walletAddress {
+    width: 350px;
+}
+/* =================================referrals==================================== */
+#referralLink1{
+    font-size: 12px;
+}
+#referralLink2{
+    font-size: 12px;
+}
+.plus-minus {
+    font-size: 0.8rem;
+    width: 16px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* =============================documents=========================================== */
+.hover-card:hover {
+    background-color: #dc3545 !important;
+    color: white !important;
+}
+.hover-card:hover h5,
+.hover-card:hover h3,
+.hover-card:hover p,
+.hover-card:hover span {
+    color: white !important;
+}
+
+/* =============================================================== */
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    header {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+    .sidebar {
+        display: none;
+    }
+
+    main {
+        padding-left: 0;
+    }
+
+    .top-bar {
+        flex-direction: column;
+        text-align: center;
+    }
+    .offcanvas {
+        padding: 0;
+    }
+    #walletAddress {
+        width: 100%;
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 769px) {
+    .offcanvas {
+        display: none;
+    }
+    
+}
+
+/* Support Button */
+.text-center .btn-danger {
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+
+
+ /* Sidebar thu gọn */
+.sidebar.collapsed {
+    width: 60px;
+}
+
+.sidebar.collapsed a span {
+    display: none;
+}
+
+.sidebar.collapsed a i {
+    margin-right: 0;
+    text-align: center;
+    width: 100%;
+}
+
+#sidebarDesktop a {
+    text-decoration: none;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+#sidebarDesktop a i {
+    margin-right: 10px;
+}
+
+
+

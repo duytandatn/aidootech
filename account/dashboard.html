@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../asset/lib/bootstrap.min.css">
+    <script src="../asset/lib/bootstrap.bundle.min.js"></script>
+    <script src="../asset/lib/font-fontawesome-ae333ffef2.js"></script>
+    <script src="../asset/js/swiper-bundle.min.js"></script>
+    <script src="../asset/js/js.js"></script>
+
+    <link rel="stylesheet" href="../asset/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../asset/css/style.css" />
+    <title>Công nghệ Aidoo</title>
+    
+</head>
+<body>
+    <header>
+        <section>
+            <div class="row g-0">
+                <div class="col-12">
+                    <div class="card rounded-0">
+                        <div class="d-flex justify-content-between align-items-center p-3">
+                            <div class="d-flex align-items-center">
+                                <div class="me-2">
+                                    <img src="../asset/img/logo.jpg" width="50px" alt="" class="img-fluid">
+                                </div>
+                                <div>
+                                    <h5 class="text-danger text-center my-0">CÔNG NGHỆ TRỢ GIÚP</h5>
+                                </div>
+                            </div>
+                            <button class="btn d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebarNav" aria-controls="sidebarNav">
+                                <i class="fa-solid fa-bars"></i>
+                            </button>
+                            <div>
+                                <a class="text-dark fw-bold fs-5" href="">VietNam</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar for desktop -->
+            <nav class="col-md-3 col-lg-2 d-none d-md-flex sidebar flex-column" id="sidebarDesktop">
+                <a href="#" id="toggleSidebar" onclick="toggleSidebar()">
+                    <i class="fa-solid fa-bars"></i> <span id="sidebarToggleText"></span>
+                </a>
+                <a href="dashboard.html" class="active"><i class="fa-solid fa-gauge-high"></i> <span>Bảng điều khiển</span></a>
+                <a href="wallet.html"><i class="fa-solid fa-money-bill-transfer"></i> <span>Gửi tiền và rút tiền</span></a>
+                <a href="invest.html"><i class="fa-solid fa-cart-shopping"></i> <span>Mua gói Aitech</span></a>
+                <a href="referrals.html"><i class="fa-solid fa-users"></i> <span>Danh sách thành viên</span></a>
+                <a href="register-network.html"><i class="fa-solid fa-user-gear"></i> <span>Quản lý thành viên</span></a>
+                <a href="swap.html"><i class="fa-solid fa-right-left"></i> <span>Hoán đổi token Aidoo</span></a>
+                <a href="transactions.html"><i class="fa-solid fa-clock-rotate-left"></i> <span>Lịch sử giao dịch</span></a>
+                <a href="setting.html"><i class="fa-solid fa-gear"></i> <span>Cài đặt</span></a>
+                <a href="support.html"><i class="fa-solid fa-headset"></i> <span>Hỗ trợ trực tuyến</span></a>
+                <a href="documents.html"><i class="fa-solid fa-file-lines"></i> <span>Tài liệu chung</span></a>
+                <a href="aidootech.io.html"><i class="fa-solid fa-wallet"></i> <span>Ví Aidotech</span></a>
+                <a href="#"><i class="fa-solid fa-right-from-bracket"></i> <span>Đăng xuất</span></a>
+            </nav>
+
+            <!-- Offcanvas sidebar for mobile -->
+            <div class="offcanvas offcanvas-start w-75 " tabindex="-1" id="sidebarNav" aria-labelledby="sidebarNavLabel">
+                <div class="offcanvas-header bg-danger ">
+                    <h5 class="offcanvas-title text-white d-flex align-items-center" id="sidebarNavLabel">
+                        <i class="fa-solid fa-gauge-high text-danger bg-white rounded-circle p-2 me-2"></i>
+                        Bảng điều khiển
+                    </h5>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="d-flex flex-column">
+                        <a href="#" class="active"><i class="fa-solid fa-gauge-high text-white bg-danger rounded-circle p-2"></i> <span class="text-dark">Bảng điều khiển</span></a>
+                        <a href="#"><i class="fa-solid fa-money-bill-transfer text-white bg-danger rounded-circle p-2"></i> <span class="text-dark">Gửi tiền và rút tiền</span></a>
+                        <a href="#"><i class="fa-solid fa-cart-shopping text-white bg-danger rounded-circle p-2"></i> <span class="text-dark">Mua gói Aitech</span></a>
+                        <a href="#"><i class="fa-solid fa-users text-white bg-danger rounded-circle p-2"></i> <span class="text-dark">Danh sách thành viên</span></a>
+                        <a href="#"><i class="fa-solid fa-user-gear text-white bg-danger rounded-circle p-2"></i> <span class="text-dark">Quản lý thành viên</span></a>
+                        <a href="#"><i class="fa-solid fa-right-left text-white bg-danger rounded-circle p-2"></i> <span class="text-dark">Hoán đổi token Aidoo</span></a>
+                        <a href="#"><i class="fa-solid fa-clock-rotate-left text-white bg-danger rounded-circle p-2"></i> <span class="text-dark">Lịch sử giao dịch</span></a>
+                        <a href="#"><i class="fa-solid fa-gear text-white bg-danger rounded-circle p-2"></i> <span class="text-dark">Cài đặt</span></a>
+                        <a href="#"><i class="fa-solid fa-headset text-white bg-danger rounded-circle p-2"></i> <span class="text-dark">Hỗ trợ trực tuyến</span></a>
+                        <a href="#"><i class="fa-solid fa-file-lines text-white bg-danger rounded-circle p-2"></i> <span class="text-dark">Tài liệu chung</span></a>
+                        <a href="#"><i class="fa-solid fa-wallet text-white bg-danger rounded-circle p-2"></i> <span class="text-dark">Ví Aidotech</span></a>
+                        <a href="#"><i class="fa-solid fa-right-from-bracket text-white bg-danger rounded-circle p-2"></i> <span class="text-dark">Đăng xuất</span></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Content -->
+            <main class="col-12 col-md-9 col-lg-10 px-3 px-md-4">
+                <!-- Top Bar -->
+                <div class="card mt-3">
+                    <div class="top-bar d-flex flex-column flex-md-row justify-content-between align-items-md-center ps-3 ps-md-5 pe-3 pe-md-5 pb-3">
+                        <div class="w-50 w-md-50 mb-3 mb-md-0" >
+                            <p class="fs-6 mb-0 mt-2 text-start">Trang web</p>
+                            <marquee class="fw-bold text-danger" behavior="scroll" direction="left" scrollamount="5">
+                                <a href="#" class="text-danger">Aidotech.io</a> /
+                                <a href="#" class="text-danger">aitech.io</a> /
+                                <a href="#" class="text-danger">app.aidotech.io</a>
+                            </marquee>
+                        </div>
+                        <div class="mb-3 mb-md-0">
+                            <p class="fs-6 mb-0 mt-2 text-start">Giá đồng tiền Solidus Aitech</p>
+                            <div class="text-start">
+                                <img src="../asset/img/anh1.jpg" width="30px" alt="" class="img-fluid">
+                                <span class="text-danger fw-bold">là 0,0832 đô la</span>
+                            </div>
+                        </div>
+                        <div class="mb-3 mb-md-0">
+                            <p class="fs-6 mb-0 mt-2 text-start">Giá token Aidoo</p>
+                            <div class="text-start">
+                                <img src="../asset/img/logo.jpg" width="30px" alt="" class="img-fluid">
+                                <span class="text-danger fw-bold">là 0,1050 đô la</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dashboard Cards -->
+                <div class="row mt-4 g-3">
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card h-100 p-3 border-danger">
+                            <div class="d-flex align-items-center">
+                                <div class="icon mb-2 me-2">
+                                    <i class="fa-solid fa-crown text-dark" style="font-size: 40px;"></i>
+                                </div>
+                                <div class="text-start">
+                                    <p class="mb-0 fs-6">CẤP ĐỘ</p>
+                                    <p class="text-danger fw-bold mb-0">A2</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card h-100 p-3 border-danger">
+                            <div class="d-flex align-items-center">
+                                <div class="icon mb-2 me-2">
+                                    <i class="fa-solid fa-user-check" style="font-size: 40px;"></i>
+                                </div>
+                                <div class="text-start">
+                                    <p class="mb-0 fs-6">HOẠT ĐỘNG F1</p>
+                                    <p class="text-danger fw-bold mb-0">2</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card h-100 p-3 border-danger">
+                            <div class="d-flex align-items-center">
+                                <div class="icon mb-2 me-2">
+                                    <i class="fa-solid fa-wallet" style="font-size: 40px;"></i>
+                                </div>
+                                <div class="text-start">
+                                    <p class="mb-0 fs-6">VÍ KHAI THÁC</p>
+                                    <p class="text-danger fw-bold mb-0">156,00 $</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card h-100 p-3 border-danger">
+                            <div class="d-flex align-items-center">
+                                <div class="icon mb-2 me-2">
+                                    <img src="../asset/img/anh2.jpg" width="40px" alt="">
+                                </div>
+                                <div class="text-start">
+                                    <p class="mb-0 fs-6">VÍ HOA HỒNG</p>
+                                    <p class="text-danger fw-bold mb-0">1.435,00 $</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card h-100 p-3 border-danger">
+                            <div class="d-flex align-items-center">
+                                <div class="icon mb-2 me-2">
+                                    <img src="../asset/img/anh2.jpg" width="40px" alt="">
+                                </div>
+                                <div class="text-start">
+                                    <p class="mb-0 fs-6">TỔNG TIỀN ĐẦU TƯ</p>
+                                    <p class="text-danger fw-bold mb-0">1.000,00 $</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card h-100 p-3 border-danger">
+                            <div class="d-flex align-items-center">
+                                <div class="icon mb-2 me-2">
+                                    <img src="../asset/img/anh2.jpg" width="40px" alt="">
+                                </div>
+                                <div class="text-start">
+                                    <p class="mb-0 fs-6">TỔNG HOA HỒNG USDT</p>
+                                    <p class="text-danger fw-bold mb-0">1.950,00 $</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card h-100 p-3 border-danger">
+                            <div class="d-flex align-items-center">
+                                <div class="icon mb-2 me-2">
+                                    <img src="../asset/img/logo.jpg" width="40px" alt="">
+                                </div>
+                                <div class="text-start">
+                                    <p class="mb-0 fs-6">AIDOO TOKEN (khóa)</p>
+                                    <p class="text-danger fw-bold mb-0">1.191,67</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card h-100 p-3 border-danger">
+                            <div class="d-flex align-items-center">
+                                <div class="icon mb-2 me-2">
+                                    <img src="../asset/img/logo.jpg" width="40px" alt="">
+                                </div>
+                                <div class="text-start">
+                                    <p class="mb-0 fs-6">AMÃ THÔNG BÁO AIDOO</p>
+                                    <p class="text-danger fw-bold mb-0">8.33</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card h-100 p-3 border-danger">
+                            <div class="d-flex align-items-center">
+                                <div class="icon mb-2 me-2">
+                                    <img src="../asset/img/logo.jpg" width="40px" alt="">
+                                </div>
+                                <div class="text-start">
+                                    <p class="mb-0 fs-6">TỔNG TIỀN ĐẦU TƯ</p>
+                                    <p class="text-danger fw-bold mb-0">1.000,00 $</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card h-100 p-3 border-danger">
+                            <div class="d-flex align-items-center">
+                                <div class="icon mb-2 me-2">
+                                    <img src="../asset/img/anh1.jpg" width="40px" alt="">
+                                </div>
+                                <div class="text-start">
+                                    <p class="mb-0 fs-6">TỔNG SỐ Solidus AITECH (khóa) (0,0834$)</p>
+                                    <p class="text-danger fw-bold mb-0">13.493,46</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card h-100 p-3 border-danger">
+                            <div class="d-flex align-items-center">
+                                <div class="icon mb-2 me-2">
+                                    <img src="../asset/img/logo.jpg" width="40px" alt="">
+                                </div>
+                                <div class="text-start">
+                                    <p class="mb-0 fs-6">Solidus AITECH (hoán đổi) (0,0834$)</p>
+                                    <p class="text-danger fw-bold mb-0">0,00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card h-100 p-3 border-danger">
+                            <div class="d-flex align-items-center">
+                                <div class="icon mb-2 me-2">
+                                    <i class="fa-solid fa-sitemap" style="font-size: 40px;"></i>
+                                </div>
+                                <div class="text-start">
+                                    <p class="mb-0 fs-6">NHÓM 01 CHI NHÁNH</p>
+                                    <p class="text-danger fw-bold mb-0">110.300,00 $</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card h-100 p-3 border-danger">
+                            <div class="d-flex align-items-center">
+                                <div class="icon mb-2 me-2">
+                                    <i class="fa-solid fa-sitemap" style="font-size: 40px;"></i>
+                                </div>
+                                <div class="text-start">
+                                    <p class="mb-0 fs-6">NHÓM 02 CHI NHÁNH</p>
+                                    <p class="text-danger fw-bold mb-0">21.250,00 $</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card h-100 p-3 border-danger">
+                            <div class="d-flex align-items-center">
+                                <div class="icon mb-2 me-2">
+                                    <i class="fa-solid fa-wallet" style="font-size: 40px;"></i>
+                                </div>
+                                <div class="text-start">
+                                    <p class="mb-0 fs-6">TỔNG DOANH SỐ</p>
+                                    <p class="text-danger fw-bold mb-0">131.550,00 $</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card h-100 p-3 border-danger">
+                            <div class="d-flex align-items-center">
+                                <div class="icon mb-2 me-2">
+                                    <i class="fa-solid fa-earth-europe" style="font-size: 40px;"></i>
+                                </div>
+                                <div class="text-start">
+                                    <p class="mb-0 fs-6">SAVINGS GLOBAL WALLET
+                                        (trừ 10% phí rút tiền hoa hồng hệ thống)</p>
+                                    <p class="text-danger fw-bold mb-0">435,40 $</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mt-3">
+                    <div class="card-header bg-danger text-white">
+                        <p class="mb-0 text-white text-start text-uppercase">Hỗ Trợ Trực Tuyến</p>
+                    </div>
+                    <div class="card-body">
+                        <p class="alert alert-info text-start lh-5">
+                            Hỗ trợ trực tuyến (vui lòng sử dụng tiếng Anh)<br>
+                            Trung tâm xử lý lỗi tài khoản trong quá trình gửi và rút tiền hoa hồng. Yêu cầu sẽ được xử lý trong vòng 24 giờ đến 48 giờ.<br>
+                            Câu trả lời sẽ được gửi tới email của bạn.<br>
+                            Đây là email chính thức: <strong>aidotech1111@gmail.com</strong>
+                        </p>
+                        <form class="row">
+                            <div class="col-12">
+                                <div class="mb-3">
+                                    <label for="fileUpload" class="form-label text-start d-block mb-2">Hình ảnh (nếu có)</label>
+                                    <input type="file" class="form-control" id="fileUpload">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="content" class="form-label text-start d-block mb-2">Nội dung cần xử lý</label>
+                                    <textarea class="form-control" id="content" rows="5" placeholder="Nhập nội dung..."></textarea>
+                                </div>
+                                <div class="text-start">
+                                    <button type="submit" class="btn btn-danger d-flex align-items-center justify-content-center" style="border-radius: 50px; background: linear-gradient(to right, #f5222d, #a8071a); padding: 10px 20px;">
+                                        <span class="me-3">Gửi</span>
+                                        <span class="d-flex align-items-center justify-content-center bg-white rounded-circle" style="width: 30px; height: 30px;">
+                                            <i class="fa-solid fa-arrow-right text-danger"></i>
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                
+            </main>
+            
+        </div>
+        
+    </div>
+</body>
+</html>
