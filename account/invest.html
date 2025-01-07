@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../asset/lib/bootstrap.min.css">
+    <script src="../asset/lib/bootstrap.bundle.min.js"></script>
+    <script src="../asset/lib/font-fontawesome-ae333ffef2.js"></script>
+    <script src="../asset/js/swiper-bundle.min.js"></script>
+    <script src="../asset/js/js.js"></script>
+
+    <link rel="stylesheet" href="../asset/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../asset/css/style.css" />
+    <title>Công nghệ Aidoo</title>
+    
+</head>
+<body>
+    <header>
+        <section>
+            <div class="row g-0">
+                <div class="col-12">
+                    <div class="card rounded-0">
+                        <div class="d-flex justify-content-between align-items-center p-3">
+                            <div class="d-flex align-items-center">
+                                <div class="me-2">
+                                    <img src="../asset/img/logo.jpg" width="50px" alt="" class="img-fluid">
+                                </div>
+                                <div>
+                                    <h5 class="text-danger text-center my-0">CÔNG NGHỆ TRỢ GIÚP</h5>
+                                </div>
+                            </div>
+                            <button class="btn d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebarNav" aria-controls="sidebarNav">
+                                <i class="fa-solid fa-bars"></i>
+                            </button>
+                            <div>
+                                <a class="text-dark fw-bold fs-5" href="">VietNam</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar for desktop -->
+            <nav class="col-md-3 col-lg-2 d-none d-md-flex sidebar flex-column" id="sidebarDesktop">
+                <a href="#" id="toggleSidebar" onclick="toggleSidebar()">
+                    <i class="fa-solid fa-bars"></i> <span id="sidebarToggleText"></span>
+                </a>
+                <a href="dashboard.html" class="active"><i class="fa-solid fa-gauge-high"></i> <span>Bảng điều khiển</span></a>
+                <a href="wallet.html"><i class="fa-solid fa-money-bill-transfer"></i> <span>Gửi tiền và rút tiền</span></a>
+                <a href="invest.html"><i class="fa-solid fa-cart-shopping"></i> <span>Mua gói Aitech</span></a>
+                <a href="referrals.html"><i class="fa-solid fa-users"></i> <span>Danh sách thành viên</span></a>
+                <a href="register-network.html"><i class="fa-solid fa-user-gear"></i> <span>Quản lý thành viên</span></a>
+                <a href="swap.html"><i class="fa-solid fa-right-left"></i> <span>Hoán đổi token Aidoo</span></a>
+                <a href="transactions.html"><i class="fa-solid fa-clock-rotate-left"></i> <span>Lịch sử giao dịch</span></a>
+                <a href="setting.html"><i class="fa-solid fa-gear"></i> <span>Cài đặt</span></a>
+                <a href="support.html"><i class="fa-solid fa-headset"></i> <span>Hỗ trợ trực tuyến</span></a>
+                <a href="documents.html"><i class="fa-solid fa-file-lines"></i> <span>Tài liệu chung</span></a>
+                <a href="aidootech.io.html"><i class="fa-solid fa-wallet"></i> <span>Ví Aidotech</span></a>
+                <a href="#"><i class="fa-solid fa-right-from-bracket"></i> <span>Đăng xuất</span></a>
+            </nav>
+
+            <!-- Offcanvas sidebar for mobile -->
+            <div class="offcanvas offcanvas-start w-75 " tabindex="-1" id="sidebarNav" aria-labelledby="sidebarNavLabel">
+                <div class="offcanvas-header bg-danger ">
+                    <h5 class="offcanvas-title text-white d-flex align-items-center" id="sidebarNavLabel">
+                        <i class="fa-solid fa-gauge-high text-danger bg-white rounded-circle p-2 me-2"></i>
+                        Bảng điều khiển
+                    </h5>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="d-flex flex-column">
+                        <a href="#" class="active"><i class="fa-solid fa-gauge-high text-white bg-danger rounded-circle p-2"></i> <span class="text-dark">Bảng điều khiển</span></a>
+                        <a href="#"><i class="fa-solid fa-money-bill-transfer text-white bg-danger rounded-circle p-2"></i> <span class="text-dark">Gửi tiền và rút tiền</span></a>
+                        <a href="#"><i class="fa-solid fa-cart-shopping text-white bg-danger rounded-circle p-2"></i> <span class="text-dark">Mua gói Aitech</span></a>
+                        <a href="#"><i class="fa-solid fa-users text-white bg-danger rounded-circle p-2"></i> <span class="text-dark">Danh sách thành viên</span></a>
+                        <a href="#"><i class="fa-solid fa-user-gear text-white bg-danger rounded-circle p-2"></i> <span class="text-dark">Quản lý thành viên</span></a>
+                        <a href="#"><i class="fa-solid fa-right-left text-white bg-danger rounded-circle p-2"></i> <span class="text-dark">Hoán đổi token Aidoo</span></a>
+                        <a href="#"><i class="fa-solid fa-clock-rotate-left text-white bg-danger rounded-circle p-2"></i> <span class="text-dark">Lịch sử giao dịch</span></a>
+                        <a href="#"><i class="fa-solid fa-gear text-white bg-danger rounded-circle p-2"></i> <span class="text-dark">Cài đặt</span></a>
+                        <a href="#"><i class="fa-solid fa-headset text-white bg-danger rounded-circle p-2"></i> <span class="text-dark">Hỗ trợ trực tuyến</span></a>
+                        <a href="#"><i class="fa-solid fa-file-lines text-white bg-danger rounded-circle p-2"></i> <span class="text-dark">Tài liệu chung</span></a>
+                        <a href="#"><i class="fa-solid fa-wallet text-white bg-danger rounded-circle p-2"></i> <span class="text-dark">Ví Aidotech</span></a>
+                        <a href="#"><i class="fa-solid fa-right-from-bracket text-white bg-danger rounded-circle p-2"></i> <span class="text-dark">Đăng xuất</span></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Content -->
+            <main class="col-12 col-md-9 col-lg-10 px-3 px-md-4">
+                <section>
+                    <div class="row">
+                        <div class="col-12 text-center mb-4">
+                            <h2 class="fw-bold fs-3">Mua gói Solidus Aitech</h2>
+                            <p class="text-danger fw-bold fs-5 fs-md-3">Gói khai thác mã thông báo Aidoo tặng kèm</p>
+                            <hr class="mx-auto" style="width: 80px; border: 2px solid #8B0000; opacity: 1;">
+                        </div>
+                    </div>
+
+                    
+                    
+                </section>
+                <section>
+                    <div class="card shadow-sm mb-4 mt-4">
+                        <div class="card-header bg-danger text-white p-3">
+                            <h5 class="mb-0 text-white text-start">Vui lòng chọn các gói Solidus Aitech</h5>
+                        </div>
+                        
+                        <div class="card-body p-4">
+                            <div class="card-body p-4">
+                                <div class="row gy-4">
+                                    <div class="col-12 col-sm-6 col-md-4">
+                                        <div class="card h-100 border-danger">
+                                            <div class="card-body p-3">
+                                                <div class="d-flex align-items-start">
+                                                    <div class="flex-shrink-0 me-3">
+                                                        <img src="../asset/img/anh2.jpg" class="rounded-circle" width="50" height="50" alt="Icon">
+                                                    </div>
+                                                    <div class="flex-grow-1">
+                                                        <h6 class=" text-muted mb-2 text-start">Số tiền USDT</h6>
+                                                        <p class="h5 text-danger fw-bold mb-0 text-start">1.435,00</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="col-12 col-sm-6 col-md-4">
+                                        <div class="card h-100 border-danger">
+                                            <div class="card-body p-3">
+                                                <div class="d-flex align-items-start">
+                                                    <div class="flex-shrink-0 me-3">
+                                                        <img src="../asset/img/anh1.jpg"  width="50" height="50" alt="Icon">
+                                                    </div>
+                                                    <div class="flex-grow-1">
+                                                        <h6 class=" text-muted mb-2 text-start fs-6">Solidus AiTech Số tiền ($0.085450)</h6>
+                                                        <p class="h5 text-danger fw-bold mb-0 text-start">0.00</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-md-4">
+                                        <div class="card h-100 border-danger">
+                                            <div class="card-body p-3">
+                                                <div class="d-flex align-items-start">
+                                                    <div class="flex-shrink-0 me-3">
+                                                        <img src="../asset/img/logo.jpg" class="rounded-circle" width="50" height="50" alt="Icon">
+                                                    </div>
+                                                    <div class="flex-grow-1">
+                                                        <h6 class=" text-muted mb-2 text-start">Số lượng token Aidoo ($0.105000)</h6>
+                                                        <p class="h5 text-danger fw-bold mb-0 text-start">8.33</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                <div class="row mb-4">
+                                    <div class="col-12 col-md-8 mx-auto">
+                                        <p class="text-center text-danger fs-5">Vào ngày 5 tháng 12 năm 2024, Aidootech chính thức ra mắt chương trình khai thác token Aidoo.
+                                            Tổng số khai thác là 3.000.000 token Aidoo.
+                                            Bạn cần nhấn nút "Khai thác" để nhận token Aidoo thành công.</p>
+                                    </div>
+                                </div>
+                                <div class="row g-4">
+                                    <div class="col-md-4">
+                                        <a href="#" class="text-decoration-none">
+                                            <div class="card shadow-sm h-100 hover-card">
+                                                <div class="card-body p-3">
+                                                    <div class="text-center mb-3">
+                                                        <h5 class="card-title fw-bold mb-2 text-dark">Gói 3</h5>
+                                                        <h3 class="fw-bold mb-3 text-danger">1.000$</h3>
+                                                        <p class="fw-bold" style="font-size: 14px;">Nhận 11.708,23 AITECH sau 360 ngày</p>
+                                                    </div>
+                                                    <div class="px-3">
+                                                        <ul class="text-start text-danger">
+                                                            <li class="mb-2">
+                                                                <span class="fw-bold">Tổng số nhận được là 9.523,81 token Aidoo, thời gian khai thác là 360 ngày.</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <a href="#" class="text-decoration-none">
+                                            <div class="card shadow-sm h-100 hover-card">
+                                                <div class="card-body p-3">
+                                                    <div class="text-center mb-3">
+                                                        <h5 class="card-title fw-bold mb-2 text-dark">Gói 4</h5>
+                                                        <h3 class="fw-bold mb-3 text-danger">3.000$</h3>
+                                                        <p class="fw-bold" style="font-size: 14px;">Nhận 35.124,69 AITECH sau 300 ngày</p>
+                                                    </div>
+                                                    <div class="px-3">
+                                                        <ul class="text-start text-danger">
+                                                            <li class="mb-2">
+                                                                <span class="fw-bold">Tổng số nhận được là 28.571,43 token Aidoo, thời gian khai thác là 300 ngày.</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <a href="#" class="text-decoration-none">
+                                            <div class="card shadow-sm h-100 hover-card">
+                                                <div class="card-body p-3">
+                                                    <div class="text-center mb-3">
+                                                        <h5 class="card-title fw-bold mb-2 text-dark">Gói 5</h5>
+                                                        <h3 class="fw-bold mb-3 text-danger">5.000$</h3>
+                                                        <p class="fw-bold" style="font-size: 14px;">Nhận 58.541,15 AITECH sau 300 ngày</p>
+                                                    </div>
+                                                    <div class="px-3">
+                                                        <ul class="text-start text-danger">
+                                                            <li class="mb-2">
+                                                                <span class="fw-bold">Tổng số nhận được là 47.619,05 token Aidoo, thời gian khai thác là 300 ngày.</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    
+                </section>
+                <section>
+                    <div class="card shadow-sm mb-4 mt-4">
+                        <div class="card-header bg-danger text-white p-3">
+                            <p class="mb-0 text-white text-start">Lịch sử giao dịch và kết thúc chu kỳ khai thác rút tiền gốc tại đây.</p>
+                        </div>
+                        
+                        <div class="card-body p-4">
+                            <div class="table-responsive">
+                                <table class="table table-hover table-striped align-middle">
+                                    <thead class="table-light">
+                                        <tr class="text-nowrap">
+                                            <th scope="col">Ngày</th>
+                                            <th scope="col">Số lượng</th>
+                                            <th scope="col">Khai thác hàng ngày</th>
+                                            <th scope="col">Tổng số Solidus AITECH</th>
+                                            <th scope="col">Tổng Aidoo (khóa)</th>
+                                            <th scope="col">Trạng thái</th>
+                                            <th scope="col" class="text-end">Chi tiết</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="text-nowrap">2025-01-07 15:36:24</td>
+                                            <td>
+                                                <div class="small">
+                                                    <div>1.000,00 đô la</div>
+                                                    <div class="text-muted">(Rút tiền sau 360 ngày)</div>
+                                                </div>
+                                            </td>
+                                            <td>0</td>
+                                            <td>11,708.230886</td>
+                                            <td>9,523.809524</td>
+                                            <td><span class="badge bg-warning">Xử lý</span></td>
+                                            <td>
+                                                <div class="d-flex flex-column gap-2 align-items-end">
+                                                    <button type="button" class="btn btn-danger btn-sm d-inline-flex align-items-center gap-2" style="border-radius: 30px; background: linear-gradient(to right, #f5222d, #a8071a);" data-bs-toggle="modal" data-bs-target="#depositModal">
+                                                        <span>Chi tiết</span>
+                                                        <span class="d-flex align-items-center justify-content-center bg-white rounded-circle" style="width: 24px; height: 24px;">
+                                                            <i class="fa-solid fa-arrow-right text-danger"></i>
+                                                        </span>
+                                                    </button>
+                                                    <button type="button" class="btn btn-danger btn-sm d-inline-flex align-items-center gap-2" style="border-radius: 30px; background: linear-gradient(to right, #f5222d, #a8071a);">
+                                                        <span>Rút</span>
+                                                        <span class="d-flex align-items-center justify-content-center bg-white rounded-circle" style="width: 24px; height: 24px;">
+                                                            <i class="fa-solid fa-arrow-right text-danger"></i>
+                                                        </span>
+                                                    </button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- modal chi tiết tiền gửi -->
+                            <div class="modal fade" id="depositModal" tabindex="-1" aria-labelledby="depositModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-md">
+                                  <div class="modal-content">
+                                    <div class="modal-header border-0">
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12 text-center mb-3">
+                                            <h2 class="fw-bold fs-4 text-danger">Chi tiết tiền gửi</h2>
+                                            <hr class="mx-auto" style="width: 60px; border: 2px solid #8B0000; opacity: 1;">
+                                        </div>
+                                    </div>
+                                    <div class="modal-body">
+                                      <table class="table table-sm text-center">
+                                        <thead class="table-primary">
+                                          <tr>
+                                            <th>Ngày</th>
+                                            <th>Số lượng</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr><td>2025-01-07</td><td>5,00$</td></tr>
+                                          <tr><td>2025-01-06</td><td>5,00$</td></tr>
+                                          <tr><td>2025-01-04</td><td>5,00$</td></tr>
+                                          <tr><td>2025-01-03</td><td>5,00$</td></tr>
+                                          <tr><td>2025-01-02</td><td>5,00$</td></tr>
+                                          <tr><td>2025-01-01</td><td>5,00$</td></tr>
+                                          <tr><td>2024-12-31</td><td>5,00$</td></tr>
+                                          <tr><td>2024-12-30</td><td>5,00$</td></tr>
+                                          <tr><td>2024-12-28</td><td>5,00$</td></tr>
+                                          <tr><td>2024-12-27</td><td>5,00$</td></tr>
+                                        </tbody>
+                                      </table>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+
+
+               
+            </main>
+            
+        </div>
+        
+    </div>
+</body>
+</html>
