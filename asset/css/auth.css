@@ -12,7 +12,7 @@
     color: #000;
     border-radius: 9px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    padding: 40px;
+    padding: 10px 40px 40px 40px;
     max-width: 550px;
     width: 100%;
   }
@@ -21,7 +21,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 
   .auth-logo img {
@@ -39,21 +39,21 @@
     font-weight: bold;
   }
 
-  .form-label {
+  .auth-container .form-label {
     font-size: 1rem;
     margin-right: 10px;
     white-space: nowrap;
   }
 
-  .form-control {
+  .auth-container .form-control {
     border-radius: 10px;
-    font-size: 0.95rem;
+    font-size: 1rem;
   }
 
-  .form-group {
+  .auth-container .form-group {
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
 
   .form-group .form-control {
