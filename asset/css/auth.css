@@ -1,0 +1,135 @@
+.auth-container {
+    background-color: #2c2f38;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+  }
+
+  .auth-card {
+    background-color: #fff;
+    color: #000;
+    border-radius: 9px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    max-width: 550px;
+    width: 100%;
+  }
+
+  .auth-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .auth-logo img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: white;
+    padding: 10px;
+  }
+
+  .auth-container h3 {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: bold;
+  }
+
+  .form-label {
+    font-size: 1rem;
+    margin-right: 10px;
+    white-space: nowrap;
+  }
+
+  .form-control {
+    border-radius: 10px;
+    font-size: 0.95rem;
+  }
+
+  .form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .form-group .form-control {
+    flex: 1;
+  }
+
+  .btn-auth {
+    background-color: #ff3e3e;
+    color: #fff;
+    font-size: 1rem;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .btn-auth:hover {
+    background-color: #e63939;
+    color: #fff;
+  }
+
+  .auth-divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  .auth-divider::before,
+  .auth-divider::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1.3px solid #1D1D20;
+  }
+
+  .auth-divider::before {
+    margin-right: 0.5em;
+  }
+
+  .auth-divider::after {
+    margin-left: 0.5em;
+  }
+  .auth-forgot a{
+    font-size: 14px;
+  }
+  .auth-link {
+    text-decoration: none;
+    color: #ff3e3e;
+  }
+
+  .auth-link:hover {
+    text-decoration: underline;
+  }
+
+  .text-end a {
+    font-size: 0.9rem;
+  }
+
+   /* MEDIA QUERY */
+   @media (max-width: 568px) {
+    .form-group {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .form-label {
+      margin-bottom: 5px;
+    }
+
+    .btn-auth {
+      padding: 6px 16px;
+    }
+    .form-label {
+        font-size: 1rem;
+        margin-right: 10px;
+        white-space: unset;
+    }
+    .auth-card {
+        padding: 20px;
+    }
+  }
