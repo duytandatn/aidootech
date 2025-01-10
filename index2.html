@@ -16,19 +16,46 @@
     
 </head>
 <body>
-    <header class="bg-light">
+    <header class="bg-light"> 
         <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light py-3">
+            <nav class="navbar navbar-expand-md navbar-light py-3">
                 <div class="container-fluid">
+                    <!-- Logo -->
                     <a href="#" class="d-flex align-items-center text-decoration-none">
                         <img src="asset/img/logo.png" width="60px" alt="">
                         <p class="text-uppercase mb-0 ms-2 text-danger fw-bold">Công nghệ trợ giúp</p>
                     </a>
-
+    
+                    <!-- Nút Offcanvas -->
                     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-
+    
+                    <!-- Menu desktop -->
+                    <div class="collapse navbar-collapse d-none d-md-block" id="navbarNav">
+                        <ul class="navbar-nav ms-auto align-items-center">
+                            <li class="nav-item">
+                                <a class="nav-link px-3 text-dark custom-hover" href="#">Trang chủ</a>
+                            </li>
+                            <li class="nav-item my-2 my-md-0">
+                                <a class="nav-link btn text-white px-3" style="background-color: red;" href="#">Mã AITECH Solidus</a>
+                            </li>
+                            <li class="nav-item my-2 my-md-0 mx-md-2">
+                                <a class="nav-link btn text-white px-3" style="background-color: red;" href="#">Mã AIDOO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-3 text-dark custom-hover" href="#">Đội</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-3 text-dark custom-hover" href="#">Hệ sinh thái</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-3 text-dark custom-hover" href="#">Liên hệ</a>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <!-- Offcanvas menu -->
                     <div class="offcanvas offcanvas-start bg-dark bg-opacity-75" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                         <div class="offcanvas-header justify-content-end">
                             <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -36,22 +63,22 @@
                         <div class="offcanvas-body">
                             <ul class="navbar-nav ms-auto align-items-center">
                                 <li class="nav-item">
-                                    <a class="nav-link px-3 fw-bold text-white" href="#">Trang chủ</a>
+                                    <a class="nav-link px-3 text-white custom-hover" href="#">Trang chủ</a>
                                 </li>
-                                <li class="nav-item my-2 my-lg-0">
-                                    <a class="nav-link btn text-white px-3 fw-bold" style="background-color: red;" href="#">Mã AITECH Solidus</a>
+                                <li class="nav-item my-2 my-md-0">
+                                    <a class="nav-link btn text-white px-3 custom-hover" style="background-color: red;" href="#">Mã AITECH Solidus</a>
                                 </li>
-                                <li class="nav-item my-2 my-lg-0 mx-lg-2">
-                                    <a class="nav-link btn text-white px-3 fw-bold" style="background-color: red;" href="#">Mã AIDOO</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link px-3 fw-bold text-white" href="#">Đội</a>
+                                <li class="nav-item my-2 my-md-0 mx-md-2">
+                                    <a class="nav-link btn text-white px-3 custom-hover" style="background-color: red;" href="#">Mã AIDOO</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link px-3 fw-bold text-white" href="#">Hệ sinh thái</a>
+                                    <a class="nav-link px-3 text-white custom-hover" href="#">Đội</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link px-3 fw-bold text-white" href="#">Liên hệ</a>
+                                    <a class="nav-link px-3 text-white custom-hover" href="#">Hệ sinh thái</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link px-3 text-white custom-hover" href="#">Liên hệ</a>
                                 </li>
                             </ul>
                         </div>

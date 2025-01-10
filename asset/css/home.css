@@ -17,6 +17,9 @@ a {
     height: 100%;
     border-radius: 20px;
 }
+.custom-hover:hover{
+    color: red !important;
+}
 @media (max-width: 576px) {
     .banner {
         height: 40vh;
@@ -43,6 +46,21 @@ a {
     }
     
 }
+/* Tạo điểm ngắt tùy chỉnh */
+@media (min-width: 800px) {
+    .navbar-collapse {
+        display: block !important; /* Hiển thị menu desktop */
+    }
+
+    .navbar-toggler {
+        display: none; /* Ẩn nút offcanvas */
+    }
+
+    .offcanvas {
+        display: none; /* Tắt offcanvas trên desktop */
+    }
+}
+
 
 
 
